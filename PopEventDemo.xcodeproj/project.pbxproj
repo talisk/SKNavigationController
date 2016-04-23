@@ -12,6 +12,9 @@
 		B1DE7F0C1CCBB1F20042466B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7F0A1CCBB1F20042466B /* Main.storyboard */; };
 		B1DE7F0E1CCBB1F20042466B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7F0D1CCBB1F20042466B /* Assets.xcassets */; };
 		B1DE7F111CCBB1F20042466B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DE7F0F1CCBB1F20042466B /* LaunchScreen.storyboard */; };
+		B1DE7F1A1CCBB24A0042466B /* SKViewController+PopEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE7F181CCBB24A0042466B /* SKViewController+PopEvent.swift */; };
+		B1DE7F1B1CCBB24A0042466B /* SKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE7F191CCBB24A0042466B /* SKNavigationController.swift */; };
+		B1DE7F1D1CCBD9BE0042466B /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DE7F1C1CCBD9BE0042466B /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B1DE7F0D1CCBB1F20042466B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1DE7F101CCBB1F20042466B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DE7F121CCBB1F20042466B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DE7F181CCBB24A0042466B /* SKViewController+PopEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKViewController+PopEvent.swift"; sourceTree = "<group>"; };
+		B1DE7F191CCBB24A0042466B /* SKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKNavigationController.swift; sourceTree = "<group>"; };
+		B1DE7F1C1CCBD9BE0042466B /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		B1DE7F051CCBB1F20042466B /* PopEventDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B1DE7F181CCBB24A0042466B /* SKViewController+PopEvent.swift */,
+				B1DE7F191CCBB24A0042466B /* SKNavigationController.swift */,
 				B1DE7F061CCBB1F20042466B /* AppDelegate.swift */,
 				B1DE7F081CCBB1F20042466B /* ViewController.swift */,
 				B1DE7F0A1CCBB1F20042466B /* Main.storyboard */,
 				B1DE7F0D1CCBB1F20042466B /* Assets.xcassets */,
 				B1DE7F0F1CCBB1F20042466B /* LaunchScreen.storyboard */,
 				B1DE7F121CCBB1F20042466B /* Info.plist */,
+				B1DE7F1C1CCBD9BE0042466B /* ViewController2.swift */,
 			);
 			path = PopEventDemo;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DE7F1D1CCBD9BE0042466B /* ViewController2.swift in Sources */,
 				B1DE7F091CCBB1F20042466B /* ViewController.swift in Sources */,
+				B1DE7F1A1CCBB24A0042466B /* SKViewController+PopEvent.swift in Sources */,
+				B1DE7F1B1CCBB24A0042466B /* SKNavigationController.swift in Sources */,
 				B1DE7F071CCBB1F20042466B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +262,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopEventDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Kai-Sun.PopEventDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopEventDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Kai-Sun.PopEventDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +300,7 @@
 				B1DE7F171CCBB1F20042466B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
