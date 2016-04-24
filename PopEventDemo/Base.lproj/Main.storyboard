@@ -47,9 +47,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="ViewController2" id="kWG-gn-sRU">
-                        <barButtonItem key="leftBarButtonItem" title="Pop" id="RUH-aO-3wg">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="DPi-YR-azv">
                             <connections>
-                                <action selector="popEvent" destination="ivv-SU-oUs" id="hGl-cw-Jvk"/>
+                                <action selector="popEvent" destination="ivv-SU-oUs" id="FeP-th-VJj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Push" id="2bL-gv-vfQ">
@@ -57,6 +57,9 @@
                                 <segue destination="g3d-Uu-qtz" kind="show" id="TCa-Nb-XSu"/>
                             </connections>
                         </barButtonItem>
+                        <connections>
+                            <outlet property="backBarButtonItem" destination="DPi-YR-azv" id="hOy-6H-PpD"/>
+                        </connections>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ4-oW-nOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -85,7 +88,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NLo-O1-tPZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qrM-tt-gnm" customClass="MJNavigationController" customModule="PopEventDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qrM-tt-gnm" customClass="SKNavigationController" customModule="PopEventDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P0u-Tz-7zn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
