@@ -22,7 +22,7 @@ class ViewController2: UIViewController, UIAlertViewDelegate {
     }
     
     @IBAction func popEvent() {
-        let alertView = UIAlertView(title: "确认", message: "请问要pop么？", delegate: self, cancelButtonTitle: "No", otherButtonTitles: "Pop")
+        let alertView = UIAlertView(title: "警告", message: "请问要pop么？", delegate: self, cancelButtonTitle: "No", otherButtonTitles: "Pop")
         alertView.delegate = self
         alertView.show()
     }
