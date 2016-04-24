@@ -10,7 +10,7 @@
 
 import UIKit
 
-class SKNavigationController: UINavigationController, UINavigationBarDelegate, UIGestureRecognizerDelegate {
+class SKNavigationController: UINavigationController, UINavigationControllerDelegate, UINavigationBarDelegate, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,14 @@ class SKNavigationController: UINavigationController, UINavigationBarDelegate, U
         m_panGR.delegate = self
         self.view.addGestureRecognizer(m_panGR)
         
+        self.delegate = self
+        
         self.interactivePopGestureRecognizer?.enabled = false
+    }
+    
+    ///  MARK: - NavigationController 代理，布尔量初值设定
+    func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
+        viewController.m_hasPopEvent = false
     }
     
     ///  MARK: - 手势代理
@@ -30,9 +37,9 @@ class SKNavigationController: UINavigationController, UINavigationBarDelegate, U
         }
         
         if topViewController is SKNavigationControllerDelegate {
-            topViewController?.viewControllerHasPopEvent(topViewController!)
-//        if self {
-            return false
+            if ((topViewController?.viewControllerHasPopEvent(topViewController!)) != nil) {
+                return (topViewController?.viewControllerHasPopEvent(topViewController!))!
+            }
         }
         return true
     }
