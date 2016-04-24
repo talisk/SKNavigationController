@@ -54,7 +54,7 @@ extension UIViewController: SKNavigationControllerDelegate {
         static var DescriptiveName = "_popEventSwitcher"
     }
     
-    var m_hasPopEvent: Bool {
+    var m_hasPopEvent: Bool! {
         get {
             return objc_getAssociatedObject(self, &PopEventSwitcherKeys.DescriptiveName) as! Bool
         }
